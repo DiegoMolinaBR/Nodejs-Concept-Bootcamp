@@ -52,7 +52,7 @@ app.delete("/repositories/:id", (request, response) => {
   return response.status(400).send('Repository not found');
 }
 
-  repositories.slice(existRepIndex, 1);
+  repositories.splice(existRepIndex, 1);
 
   return response.status(200).send();
 });
