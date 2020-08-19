@@ -54,7 +54,7 @@ app.delete("/repositories/:id", (request, response) => {
 
   repositories.splice(existRepIndex, 1);
 
-  return response.status(200).send();
+  return response.status(204).send();
 });
 
 //Give a like to the repository 
